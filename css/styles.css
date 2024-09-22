@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+:root{
+    --bg-color:#080808;
+    --text-color: white;
+    --main-color: #6f10f4;
+}
+body{
+    background-color: var(--text-color);
+    color: var(--text-color);
+}
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #080808;
+    padding: 1.2rem;
+}
+header section span a{
+    color: var(--text-color);
+    margin-left: 4rem;
+}
+
+header section span:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    text-shadow: 0 0 22px var(--main-color);
+}
+header div ul{
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+header div ul li a{
+    color: var(--text-color);
+}
+header div ul li a:hover{
+    color: var(--main-color);
+    animation: 0 0 25px ease-in-out;
+    border-bottom: 3px solid var(--main-color);
+}
+
+
+
+/* Estilos Main INDEX*/
+main section{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 20vh;
+margin-left: 4rem;
+}
+main section .foto img{
+    width: 450px;
+    height: 450px;
+    background-image: url(/img/IMG_6095.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 5rem;
+    box-shadow: 0 0  10px black; 
+}
+
+.texto{
+    color: var(--bg-color);
+    font-size: 20px;
+}
+.texto span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/*Estilos SOBRE MI*/
+main .social-icons{
+    padding-top: 20vh;
+    display: flex;
+    justify-content: center;
+}
+main .social-icons img{
+    width: 130px;
+    padding-bottom: 5rem;
+    padding: 20px;
+}
+main p{
+    color: var(--bg-color);
+    text-align: center;
+    padding: 2rem;
+    font-size: 20px;
+}
+main .servicio-btn{
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.servicio-btn li a{
+    padding: 1rem;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: var(--text-color);
+}
+
+
+/*Estilos SERVICIOS*/
+
+main .servicios{
+    color: var(--bg-color);
+    padding: 2rem;
+    font-weight: bold;
+}
+
+main .eci{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+main .eci img{
+    border-radius: 3rem;
+    width: 500px;
+}
+main .eci p{
+    font-size: 20px;
+    padding-bottom: 5rem;
+}
+
+main .eci ul li a{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+main .reseña{
+    display: flex;
+    justify-content: center;
+    padding-left: 8%;
+
+}
+main .reseña div{
+    width: 20%;
+    border:5px #080808;
+    border-radius: 30px;
+    background-color: #080808;
+}
+main .reseña div h2{
+    color: var(--main-color);
+    text-align: center;
+}
+main .reseña div .text-cliente{
+    padding: 10px;
+    color: #ccc;
+}
+main .reseña div p{
+    color: var(--text-color);
+}
+.estrellas{
+    width: 100%;
+}
+.cliente{
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+}
