@@ -169,3 +169,145 @@ main .reseña div p{
     padding: 15px;
     border-radius: 30px;
 }
+.cv{
+    color: #080808;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+    text-align: center;
+}
+
+.btn_cv {
+background-color: rgba(51, 51, 51, 0.05);
+border-radius: 8px;
+border-width: 0;
+color: #333333;
+cursor: pointer;
+display: inline-block;
+font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+list-style: none;
+margin: 0;
+padding: 10px 12px;
+text-align: center;
+transition: all 200ms;
+vertical-align: baseline;
+white-space: nowrap;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+padding:1rem;
+margin: 1rem;
+
+}
+
+/* MQ*/
+@media (max-width: 768px) {
+    header section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header section span a {
+        margin-left: 1rem;
+    }
+
+    header div ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    main section {
+        flex-direction: column;
+        margin: 10vh 1rem;
+        text-align: center;
+    }
+
+    main section .foto img {
+        width: 250px;
+        height: 250px;
+        margin-left: 0;
+    }
+
+    .texto {
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+}
+
+/* Media Query para tablets */
+@media (max-width: 768px) { 
+    /* ... tus estilos existentes para tablets ... */
+}
+
+/* Media Query para móviles */
+@media (max-width: 480px) { 
+    header section {
+        flex-direction: column; /* Apilar elementos en columna */
+        align-items: center; /* Centrar horizontalmente */
+    }
+
+    header div ul {
+        flex-direction: column;
+        align-items: center; /* Centrar horizontalmente los elementos del menú */
+    }
+
+    main section .foto img {
+        width: 80%; /* Ancho relativo al contenedor */
+        height: auto; /* Ajustar altura automáticamente */
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .social-icons img {
+        width: 80px; /* Reducir el tamaño de los iconos */
+    }
+
+    main .eci img {
+        width: 90%; 
+    }
+
+    main .reseña {
+        flex-direction: column; /* Apilar las reseñas en columna */
+        align-items: center;
+    }
+
+    main .reseña div {
+        width: 80%;
+        margin-bottom: 20px; 
+    }
+
+    /* Ajustar ancho del formulario de contacto */
+    .formcarry-container {
+        width: 90%;
+    }
+}
+@media (max-width: 480px) { 
+    /* ... (Otros estilos para móviles pequeños) ... */
+    .social-icons {
+        flex-direction: column; /* Apilar iconos en columna */
+        align-items: center; /* Centrar los iconos horizontalmente */ 
+    }
+    .flechas{
+        display: none;
+    }
+    
+    body{
+        margin-bottom: 4rem;
+    }
+    .social-icons img {
+        width: 150px; /* Ajustar tamaño de los iconos */
+        margin-bottom: 10px; /* Agregar espacio entre los iconos apilados */
+    }
+
+    p {
+        font-size: 14px; /* Reducir tamaño de fuente */
+    }
+}
